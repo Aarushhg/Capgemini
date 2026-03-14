@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+    <context:annotation-config/>
+<!--    <bean id="hello" class="com.cg.bean.HelloWorld" scope="singleton">-->
+<!--        &lt;!&ndash;property name="name" value="Swati"> </property&ndash;&gt;-->
+<!--        &lt;!&ndash;constructor-arg name="name" value="Aarush"></constructor-arg&ndash;&gt;-->
+<!--        <property name="Language">-->
+<!--            <list>-->
+<!--                <value>Hindi</value>-->
+<!--                <value>English</value>-->
+<!--                <value>Sanskrit</value>-->
+<!--                <value>Hindi</value>-->
+<!--            </list>-->
+<!--&lt;!&ndash;            <set>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>Hindi</value>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>English</value>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>Sanskrit</value>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>Hindi</value>&ndash;&gt;-->
+<!--&lt;!&ndash;            </set>&ndash;&gt;-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    <bean id="e" class="com.cg.bean.Employee" autowire="byType">-->
+<!--    <bean id="e" class="com.cg.bean.Employee">-->
+<!--        <property name="empid" value="1001"/>-->
+<!--        <property name="name" value="Samar"/>-->
+<!--&lt;!&ndash;        <property name="address" ref="add"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    <bean id="add" class="com.cg.bean.Address">-->
+<!--&lt;!&ndash;        <constructor-arg name="city" value="City"></constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="country" value="Country"></constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="zip" value="9999999"></constructor-arg>&ndash;&gt;-->
+<!--        <property name="city" value="Noida"/>-->
+<!--        <property name="country" value="India"/>-->
+<!--        <property name="zip" value="201306"/>-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    <bean id="address" class="com.cg.bean.Address">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="city" value="Gurgaon"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="country" value="India"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="zip" value="122001"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--    <bean id="add1" class="com.cg.bean.Address">-->
+<!--        <property name="city" value="Gurgaon"/>-->
+<!--        <property name="country" value="India"/>-->
+<!--        <property name="zip" value="122001"/>-->
+<!--    </bean>-->
+    <context:component-scan base-package="com.cg.bean"/>
+    <context:property-placeholder location="classpath:data.properties"/>
+</beans>
